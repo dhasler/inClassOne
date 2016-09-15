@@ -1,3 +1,101 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
 body, html {
-  font-size: 12px;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+nav{
+  background: #ccc;
+  position: fixed;
+  font-size: 4rem;
+  height: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+nav ul{
+  display: block;
+  height: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li{
+  display: block;
+  float: right;
+  text-align: center;
+  position: relative;
+  width: 33%;
+}
+
+nav ul li a:before{
+  content:"\0227C";
+  display: block;
+  left: 0;
+  opacity: 0;
+  
+  position: absolute;
+  top: 0;
+  transition: all 0.2s;
+}
+
+nav ul li:hover a:before{
+  left: 15px;
+  opacity: 1;  
+}
+
+nav ul li a:after{
+  content:"\0227D";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s;  
+}
+
+nav ul li:hover a:after{
+  opacity: 1;
+  right: 15px;
+}
+
+#main{
+  background:#ddd;
+  margin-top: 55px;
+  width: 100%;
+}
+
+.center{
+  margin: auto;
+  width: 65%;
+}
+
+#directDrive{
+  font-size: 2rem;
+}
+
+#directDrive img{
+  float: left;
+  margin: 10px;
+  margin-left: 0;
+  position: relative;
+  width: 50%;
+}
+
+#form{
+  font-size: 2rem;
+}
+
+footer{
+  font-size: 3rem;
 }
